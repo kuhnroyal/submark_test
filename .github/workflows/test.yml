@@ -1,0 +1,19 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  submark-test:
+    name: Submark
+    runs-on: [linux]
+    steps:
+      - name: Submark test
+        uses: dahlia/submark@0.3.1
+        with:
+          input-text: '# 123 yay foo bar'
+          heading-level: 1
+          heading-title-text: 123
+          ignore-case: true
+          omit-heading: true
