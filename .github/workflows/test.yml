@@ -7,7 +7,7 @@ on:
 jobs:
   submark-test:
     name: Submark
-    runs-on: [linux]
+    runs-on: [ubuntu-latest]
     steps:
       - name: Submark test
         uses: dahlia/submark@0.3.1
